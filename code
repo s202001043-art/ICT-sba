@@ -1,10 +1,3 @@
-
-//move to line 360 for code
-//move to line 360 for code
-//move to line 360 for code
-//move to line 360 for code
-//move to line 360 for code
-//move to line 360 for code
 #include <iostream>
 #include <string>
 #include <limits>
@@ -350,6 +343,23 @@ const string hints[8][10] = {
         "Probabilities range between completely impossible (0) and absolute certainty (1)."
     }
 };
+// remove spaces and make all letters lowercase, for answer checking
+string cleanAnswer(string s) {
+    string result = "";
+    for (int i = 0; i < (int)s.length(); i++) {
+        if (s[i] == ' ') {
+            continue;
+        }
+        if (s[i] >= 'A' && s[i] <= 'Z') {
+            result = result + (char)(s[i] + 32);
+        }
+        else {
+            result = result + s[i];
+        }
+    }
+    return result;
+}
+
 // clear the screen
 void clearScreen() {
     cout << "\033[2J\033[1;1H";
@@ -509,57 +519,60 @@ int main() {
         //game code
         printBoard(player[0], player_position);
         for (questionIndex = 0; questionIndex < 9; questionIndex++) {
-            int questionNumber = questionIndex + 1;
-            //start timer for the question
+			int questionNumber = questionIndex + 1;
+			//start timer for the question
             auto startTime = chrono::steady_clock::now();
-            cout << endl << "Coins: [" << total_coins << "]" << endl;
-            printHp(player_health);
-            cout << "You entered a " << getRandomRoomType() << " room" << endl << endl;
+            cout << endl << "Coins: [" << total_coins << "]"<<endl;
+			printHp(player_health);
+            cout << "You entered a " << getRandomRoomType()  << " room"<<endl<<endl;
             cout << "Question " << questionNumber << ": " << questions[topicnameIndex][questionIndex] << endl;
             cout << "Input: ";
-            cin >> input;
-            
-            if (input == "boss") {
+            cin >> ws;                 // skip the Enter left by the last cin >>
+            getline(cin, input);       // read the whole line, spaces included
+			if (input == "boss") {
                 break;
-            }
-            
-            if (input == answers[topicnameIndex][questionIndex]) {
+			}
+            if (cleanAnswer(input) == cleanAnswer(answers[topicnameIndex][questionIndex])) {
                 //time taken
                 auto endTime = chrono::steady_clock::now();
-                auto secondsPassed = chrono::duration_cast<chrono::seconds>(endTime - startTime).count();
-                int earned_amount = (secondsPassed > 0) ? (100 / secondsPassed) : 100;
-                total_coins += earned_amount;
-                cout << "Correct! You earned " << earned_amount << " Coins!(" << getRandomRoomType() << ") room used " << secondsPassed << "s" << endl << "type anything to continue" << endl;
+                int secondsPassed = (int)chrono::duration_cast<chrono::seconds>(endTime - startTime).count();
+                if (secondsPassed < 1) {
+                    secondsPassed = 1;      // avoid divide by zero
+                }
+                int earned_amount = 100 / secondsPassed;
+                total_coins= total_coins+ earned_amount;
+                cout << "Correct! You earned " << earned_amount << " Coins!(" << getRandomRoomType() << ") room used "<<secondsPassed<<"s" << endl << "type anything to continue" << endl;
                 cin >> input;
                 player_position++;
                 clearScreen();
                 printBoard(player[0], player_position);
             }
             else {
-                cout << "Incorrect! U flee and lose 1 health." << endl << "press 1 to continue" << endl << "press 2 to retry to gain back your health: ";
+                cout << "Incorrect! U flee and lose 1 health." << endl << "press 1 to continue" << endl << "press 2 to retry to gain back your health";
                 cin >> input;
                 if (input == "1") {
                     player_health--;
-                    printHp(player_health);
+					printHp(player_health);
                     if (player_health <= 0) {
-                        EndGame(player, &player_position, &player_health);
+						EndGame(player, &player_position, &player_health);
                         break;
                     }
                     player_position++;
+
                 }
                 else if (input == "2") {
-                    // Fixed topicnameIndex display to questionNumber
                     cout << "Question " << questionNumber << ": " << questions[topicnameIndex][questionIndex] << endl << "hint: " << hints[topicnameIndex][questionIndex] << endl;
                     cout << "Input: ";
-                    cin >> input;
-                    if (input == answers[topicnameIndex][questionIndex]) {
+                    cin >> ws;                 // skip the Enter left by the last cin >>
+                    getline(cin, input);       // read the whole line, spaces included
+                    if (cleanAnswer(input) == cleanAnswer(answers[topicnameIndex][questionIndex])) {
                         cout << "Correct! You regain 1 health" << endl << "type anything to continue" << endl;
                         cin >> input;
                         player_position++;
-                        // Removed questionIndex++ here
+                        questionIndex++;
                     }
                     else {
-                        clearScreen();
+						clearScreen();
                         cout << "Incorrect! U flee." << endl << "type anything to continue" << endl;
                         player_health--;
                         printHp(player_health);
@@ -569,14 +582,13 @@ int main() {
                         }
                         cin >> input;
                         player_position++;
-                        // Removed questionIndex++ here
+                        questionIndex++;
                     }
                 }
 
                 clearScreen();
-                printBoard(player[0], player_position);
+                    printBoard(player[0], player_position);
             }
-        
 
 
         }
