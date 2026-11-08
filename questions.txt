@@ -1,0 +1,90 @@
+8
+10
+Chart Reading
+In a bar chart, if Monday = 10 and Tuesday = 15, what is the total sales?|25|Add the value of Monday and Tuesday together.
+A pie chart section has a central angle of 90 degrees. What fraction of the total does it represent?|1/4;25%;0.25|Divide 90 degrees by the total 360 degrees in a circle.
+In a line graph, what does a flat horizontal line indicate?|constant;slope=0;slope 0;0;no change;unchanged|Think about whether the value is going up, down, or staying constant.
+If a pie chart has 360 degrees total and sector A is 120 degrees, what percentage is sector A?|33.33%;33.3%;1/3;33%|Calculate (120 / 360) * 100%.
+In a bar chart, if Bar A height is 20 and Bar B is 10, what is the ratio of A to B?|2:1;2 to 1;2/1|Divide both numbers by 10 to simplify the ratio A:B.
+What type of chart is best suited for displaying continuous trends over time?|line graph;line chart|Think of a graph that connects data points with line segments.
+In a histogram, what does the height of each bar represent?|frequency;count|It counts how many data items fall into that interval (count).
+If a line graph moves upwards from left to right, what trend does it show?|increasing trend;increasing;upward trend;rising|Consider whether values increase or decrease as you move right.
+In a pie chart representing 400 total people, how many people are in a 90-degree sector?|100|90 degrees is 1/4 of a circle. Calculate 1/4 of 400.
+What chart element explains what different colors or symbols represent?|legend;key|Look for the small label box usually placed at the side of a chart.
+Percentages (Profit/Loss/Interest)
+Calculate 15% of 200.|30|Multiply 200 by 0.15 (or 15/100).
+An item bought for $50 is sold for $65. What is the profit percentage?|30%|Profit = $15. Divide profit by cost price ($50) and multiply by 100.
+Calculate the simple interest on $1000 at 5% per annum for 2 years.|100;100 dollars;$100|Use the simple interest formula: Interest = Principal * Rate * Time.
+A jacket costing $120 is discounted by 25%. What is the final sale price?|90|Calculate 75% of $120, or subtract 25% ($30) from $120.
+If a quantity increases from 80 to 100, what is the percentage increase?|25%|Increase = 20. Percentage Increase = (20 / 80) * 100.
+What is the original cost price if an item was sold for $90 at a 10% loss?|100;100 dollars;$100|$90 represents 90% of the original cost price.
+Calculate compound interest on $500 at 10% per annum for 2 years compounded annually.|105;105 dollars;$105|Year 1 interest is $50. Year 2 interest is 10% of $550 ($55). Add them up.
+Express 3/5 as a percentage.|60%|Multiply 3/5 by 100.
+If tax adds 8% to a $50 purchase, what is the total amount paid?|54;54 dollars;$54|Find 8% of $50 ($4) and add it to the original $50.
+A price increases by 10% and then decreases by 10%. Is the final price higher or lower than the original?|lower;lower than the original;decrease|Start at 100: +10% becomes 110, then -10% of 110 becomes 99.
+Linear/Quadratic Equations
+Solve for x: 3x + 5 = 20.|5;x=5|Subtract 5 from 20, then divide by 3.
+Solve for x: 2(x - 4) = 12.|10;x=10|Divide 12 by 2, then add 4.
+What are the roots of the equation x^2 - 9 = 0?|3, -3;3,-3;3 and -3;±3|x^2 = 9. Take both the positive and negative square root of 9.
+Solve for x: 4x - 7 = 2x + 9.|8;x=8|Subtract 2x from 4x and add 7 to 9.
+Solve for x: x^2 - 5x + 6 = 0.|2, 3;3, 2;2 and 3|Find two numbers that multiply to +6 and add up to -5.
+What is the formula for the discriminant of quadratic equation ax^2 + bx + c = 0?|b^2 - 4ac;b^2-4ac|Look for the expression under the square root in the quadratic formula.
+If the discriminant (b^2 - 4ac) is negative, how many real roots exist?|0;no real roots;none|You cannot take a real square root of a negative number.
+Solve for y in the linear system: x + y = 10 and x - y = 4.|3;y=3|Subtract the second equation from the first: 2y = 6.
+Find the vertex x-coordinate of the parabola y = x^2 - 4x + 3.|2;x=2|Use the vertex formula: x = -b / (2a).
+Solve for x: (x + 3)(x - 2) = 0.|-3, 2;2, -3;-3 and 2|Set each factor equal to zero: (x + 3) = 0 and (x - 2) = 0.
+Change of Subject
+In the equation y = mx + c, make x the subject.|x = (y - c) / m|Subtract c from y first, then divide by m.
+In the formula A = l * w, make w the subject.|w = A / l|Divide both sides by l.
+In the formula v = u + at, make t the subject.|t = (v - u) / a|Subtract u from v first, then divide by a.
+In the formula C = 2 * pi * r, make r the subject.|r = C / (2 * pi)|Divide C by (2 * pi).
+In Einstein's equation E = m * c^2, make c the subject.|c = sqrt(E / m)|Divide E by m, then take the square root of the result.
+In A = (1/2)h(a + b), make h the subject.|h = 2A / (a + b)|Multiply A by 2, then divide by (a + b).
+In P = 2l + 2w, make l the subject.|l = (P - 2w) / 2|Subtract 2w from P, then divide the result by 2.
+In y = sqrt(x + 3), make x the subject.|x = y^2 - 3|Square both sides first to get rid of the square root, then subtract 3.
+In S = ut + (1/2)a(t^2), make u the subject.|u = (S - (1/2)a*t^2) / t|Subtract (1/2)a(t^2) from S, then divide everything by t.
+In V = (4/3) * pi * r^3, make r the subject.|r = cbrt(3V / (4 * pi))|Multiply V by 3, divide by 4*pi, then take the cube root.
+Polynomials & Factorization
+Factorize completely: x^2 + 7x + 12.|(x + 3)(x + 4);(x + 4)(x + 3)|Find two numbers that multiply to 12 and add to 7.
+Factorize completely: 4x^2 - 16.|4(x - 2)(x + 2);4(x + 2)(x - 2)|Factor out 4 first, then use difference of squares (a^2 - b^2).
+Expand and simplify: (x + 3)(x + 5).|x^2 + 8x + 15|Use FOIL: Multiply First, Outer, Inner, and Last terms.
+What is the degree of the polynomial 3x^4 - 2x^2 + 7?|4;degree 4|Look for the highest exponent of x in the expression.
+Factorize out the common factor: 6x^3 + 9x^2.|3x^2(2x + 3)|Find the greatest common factor (GCF) of both 6x^3 and 9x^2.
+Factorize completely: x^2 - 10x + 25.|(x - 5)^2;(x-5)^2|This is a perfect square trinomial of the form (a - b)^2.
+Factorize completely: 2x^2 + 5x + 3.|(2x + 3)(x + 1);(x + 1)(2x + 3)|Split 5x into 2x + 3x, then factor by grouping.
+Expand: (2x - 3)^2.|4x^2 - 12x + 9;4x^2-12x+9|Use the expansion formula: (a - b)^2 = a^2 - 2ab + b^2.
+Factorize using difference of squares: 25y^2 - 49.|(5y - 7)(5y + 7);(5y + 7)(5y - 7)|Use the pattern (a^2 - b^2) = (a - b)(a + b) where a = 5y and b = 7.
+Find the remainder when x^2 + 3x + 2 is divided by (x + 1).|0|Substitute x = -1 into the polynomial expression.
+Exponential Laws
+Simplify: x^3 * x^5.|x^8|When multiplying terms with the same base, add their exponents.
+Simplify: y^8 / y^2.|y^6|When dividing terms with the same base, subtract their exponents.
+Evaluate: 5^0.|1|Any non-zero number raised to the power of 0 equals this constant.
+Simplify: (a^4)^3.|a^12|When raising a power to another power, multiply the exponents.
+Evaluate: 2^(-3).|0.125;1/8|Use the negative exponent rule: a^(-n) = 1 / (a^n).
+Evaluate: 16^(1/2).|4|A fractional exponent of 1/2 is equivalent to taking the square root.
+Simplify: (2x^3)^2.|4x^6|Apply the square exponent to both the constant (2) and x^3.
+Solve for x: 2^x = 32.|5|Count how many times you must multiply 2 by itself to reach 32.
+Evaluate: 27^(2/3).|9|Take the cube root of 27 first, then square that result.
+Simplify: x^(-2) * x^6.|x^4|Add the exponents together: -2 + 6.
+Statistics (Mean/Median/Mode)
+Find the mean of the numbers: 2, 4, 6, 8, 10.|6|Add all 5 numbers together and divide the sum by 5.
+Find the median of the set: 3, 7, 1, 9, 5.|5|Arrange the numbers in ascending order first, then find the middle one.
+Find the mode of the numbers: 4, 1, 4, 2, 5, 4, 3.|4|Find the number that appears most frequently in the list.
+What is the range of the dataset: 12, 5, 22, 30, 8?|25|Subtract the smallest value (5) from the largest value (30).
+If the sum of 5 numbers is 60, what is their mean?|12|Divide the total sum (60) by the number of items (5).
+Find the median of the set: 4, 8, 12, 16.|10|Take the average of the two middle numbers (8 and 12).
+What is a dataset called if it has two modes?|bimodal;bi-modal|The prefix 'bi-' means two.
+If an extreme outlier of 100 is added to 1, 2, 3, 4, 5, which changes more: mean or median?|mean|Outliers heavily skew the sum/average, but don't shift the middle position as much.
+Find the mean of 15, 20, 25.|20|Add 15, 20, and 25 together, then divide by 3.
+What is the middle value of an ordered dataset called?|median|It is the middle value in an ordered set of data.
+Probability
+What is the probability of flipping heads on a fair coin?|0.5;1/2;50%|Calculate: Favorable outcomes (1) / Total outcomes (2).
+What is the probability of rolling a 4 on a standard 6-sided die?|1/6;0.1667|There is only 1 side with a 4 out of 6 total sides.
+What is the probability of rolling an even number on a standard 6-sided die?|1/2;0.5;50%|Even numbers on a die are 2, 4, and 6 (3 outcomes out of 6).
+If a bag has 3 red and 7 blue marbles, what is the probability of drawing a red marble?|0.3;3/10;30%|Divide the number of red marbles (3) by total marbles (3 + 7).
+What is the sum of probabilities for all possible mutually exclusive outcomes?|1;100%|All possible probabilities combined always sum up to 100% (or 1).
+What is the numerical probability of an impossible event?|0|An outcome that can never happen has a probability of zero.
+If P(Event A) = 0.35, what is P(not A)?|0.65;65%|Use the complement rule: P(not A) = 1 - P(A).
+What is the probability of drawing an Ace from a standard deck of 52 cards?|1/13;4/52|There are 4 Aces in a standard 52-card deck. Simplify 4/52.
+Two fair coins are flipped. What is the probability of getting two heads?|1/4;0.25;25%|Multiply the independent probabilities: (1/2) * (1/2).
+What is the range of valid values for any probability P(E)?|0 to 1;0-1;between 0 and 1|Probabilities range between completely impossible (0) and absolute certainty (1).
