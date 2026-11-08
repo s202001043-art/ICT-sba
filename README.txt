@@ -17,8 +17,6 @@ How to run
      questions_teacher.txt automatically.
 
 Notes
-  - Windows 10 or Windows 11, no installation needed.
-  - If the characters look strange, run the game in Windows Terminal.
   - Do not rename or move the three .txt files.
 
 Version 1.0  (built with Microsoft Visual Studio, Release x64)
